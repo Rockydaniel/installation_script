@@ -1,0 +1,22 @@
+#bin/bash
+#update Repo
+sudo apt update
+#install curl
+sudo apt install curl -y
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+#bash_completion source string already in /home/g4dm1nbubu/.bashrc
+#Close and reopen your terminal to start using nvm or run the following to use it now:
+
+#activate nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm install --lts
+nvm install-latest-npm
+
+#activate npm
+. ~/.nvm/nvm.sh
+. ~/.profile
+. ~/.bashrc
