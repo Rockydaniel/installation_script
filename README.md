@@ -6,4 +6,4 @@ Note: for linux Debian build only
 
 ☐ install-python3.sh -> Set up python3 & pip automatically
 
-☐ install-docker.sh
+☐ install-docker.sh -> Set up Docker automatically
