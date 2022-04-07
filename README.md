@@ -1,5 +1,5 @@
 # installation_script
-Download and execute. This script should make your life easier, feel free to use and contribute let me know for any bug, thanks..
+Download and execute. This script should make your life easier, feel free to use and contribute
 Note: for linux Debian build only
 
 ☐ install-nodejs -> Set up node JS automatically
