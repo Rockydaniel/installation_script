@@ -34,3 +34,9 @@ sudo systemctl enable docker --now
 
 #Install Docker Compose
 sudo -E apt-get -y install docker-compose
+
+#allow docker to run without sudo
+sudo usermod -aG docker $(whoami)
+sudo chmod 666 /var/run/docker.sock
+sudo systemctl restart docker
+
